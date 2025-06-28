@@ -10,7 +10,7 @@ body {
 /* Header / Hero Section */
 .hero {
     position: relative;
-    background-image: url("/lotzzamotzza/assets/images/pizza_1.WEBP");
+    background-image: url("/lotzzamotzza/assets/images/pizza_1.webp");
     background-size: 80% auto; /* 80% of container width, auto height */
     background-repeat: no-repeat;
     background-position: center;
