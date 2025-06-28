@@ -9,8 +9,10 @@ body {
 
 /* Header / Hero Section */
 .hero {
-    background-image: url('hero-pizza.jpg');
-    background-size: cover;
+    position: relative;
+    background-image: url("/lotzzamotzza/assets/images/pizza_1.webp");
+    background-size: 80% auto; /* 80% of container width, auto height */
+    background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     display: flex;
@@ -18,7 +20,19 @@ body {
     align-items: center;
     color: #fff;
     text-align: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); /* Adjust 0.5 for more/less transparency */
+    z-index: 1;
+}
+
+.hero-text {
     position: relative;
+    z-index: 2;
 }
 
 .hero-text h1 {
@@ -28,8 +42,12 @@ body {
 }
 
 .hero-text p {
-    font-size: 1.5rem;
+    font-size: 5rem;
     margin: 10px 0;
+    color: #ccc;
+    background-color: rgba(0,0,0,0.6); /* semi-transparent black */
+    padding: 0.5em 1em;
+    border-radius: 8px;
 }
 
 .btn {
@@ -71,15 +89,23 @@ p {
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers items horizontally */
+    gap: 16px; /* optional: space between images */
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-item img {
-    width: 100%;
+    display: block;
+    max-width: 200px; /* adjust as needed */
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px; /* optional: rounded corners */
 }
 
 .flavor-list {
