@@ -1,0 +1,10 @@
+title: Lotzza Motzza Fan Club
+baseurl: "/lotzzamotzza" # the subpath of your site
+url: "https://calebg15.github.io" # the base hostname & protocol for your site
+
+# Optional: Exclude folders/files from build
+exclude:
+  - README.md
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
