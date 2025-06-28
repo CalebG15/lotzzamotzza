@@ -1,45 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Join the Lotzza Motzza Fan Club – the ultimate community for pizza lovers!">
-    <title>Lotzza Motzza Fan Club</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <base href="/lotzzamotzza/">
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <div id="navbar"></div>
-    <script>
-    fetch('components/navbar.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-    });
-    </script>
+---
+layout: default
+title: Lotzza Motzza Fan Club
+---
 
-    <!-- Welcome Section -->
-    <main id="main-content">
-        <header class="hero">
-            <div class="hero-text">
-                <h2>Welcome to the Lotzza Motzza Fan Club</h2>
-                <p>Where Every Slice Counts!</p>
-                <a href="pages/join.html" class="btn">Join the Club</a>
-            </div>
-        </header>
-    </main>
-
-    <!-- Footer -->
-    <div id="footer"></div>
-    <script>
-    fetch('components/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer').innerHTML = data;
-    });
-    </script>
-</body>
-</html>
+<header class="hero">
+  <div class="hero-text">
+    <h2>Welcome to the Lotzza Motzza Fan Club</h2>
+    <p>Where Every Slice Counts!</p>
+    <a href="pages/join.html" class="btn">Join the Club</a>
+  </div>
+</header>
